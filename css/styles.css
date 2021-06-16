@@ -1,0 +1,170 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.background {
+  background-image: url("../img/cheese-background.jpeg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
+  padding-bottom: 8%;
+  overflow: auto;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  padding-top: 20%;
+  min-width: 800px;
+  background-image: ;
+}
+.btn { 
+  margin: auto;
+  margin-top: 5%;
+  display: block;
+}
+#pig-dice-form {
+  margin-top: 5%;
+}
+.input-form {
+  margin: auto;
+}
+.form-control-lg {
+  width: 100%;
+}
+.jumbotron {
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: fit-content;
+}
+#game-board {
+  display: none;
+  margin-top: 5%;
+  border: none;
+}
+#dice-board .btn {
+  width: 75%;
+  min-width: fit-content;
+}
+#dice-board {
+  margin-top: -30%;
+  margin-left: -10%;
+}
+#game-board .card-body {
+  height: 200px;
+  background:  none;
+  font-weight: bolder;
+}
+#game-board .card {
+  background: none;
+  border: none;
+}
+.col-md-5, .col-md-2 {
+  margin: 0;
+  padding: 0;
+}
+.card-title {
+  text-align: center;
+  margin-top: 5%;
+}
+.score {
+  font-size: xx-large;
+  text-align: center;
+}
+#pig-dice-form img {
+  width: 100%;
+}
+.col-md-3 img {
+  margin-top: -40%;
+}
+#start {
+	box-shadow:inset 0px 1px 0px 0px #f9eca0;
+	background:linear-gradient(to bottom, #f0c911 5%, #f2ab1e 100%);
+	background-color:#f0c911;
+	border-radius:17px;
+	border:3px solid #e65f44;
+	display:inline-block;
+	cursor:pointer;
+	color:black;
+	font-family:Arial;
+	font-size:23px;
+	font-weight:bolder; 
+	padding:16px 30px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ded17c;
+  width: fit-content;
+  display: block;
+  margin: auto;
+}
+#start:hover {
+  background:linear-gradient(to bottom, #f2ab1e 5%, #f0c911 100%);
+	background-color:#f2ab1e;
+}
+#start:active {
+  position:relative;
+	top:1px;
+}
+.col-md-1 img#vs {
+  display: block;
+  width: 170%;
+  margin-left: -30%;
+  margin-top: -10%;
+  z-index: 100;
+}
+.col-md-1 {
+  overflow: visible;
+}
+.row {
+  margin-left: 5%;
+}
+button#hold img, button#roll img {
+  width: 100%;
+}
+button#hold, button#roll {
+  background: none;
+  border: none;
+}
+button#roll {
+  width: 120%;
+  margin-left: -10%;
+}
+button#hold {
+  width: 100%;
+}
+#game-board .inactive {
+  background-color: #f5db1c;
+  margin: 5%;
+  border-radius: 8%;
+  box-shadow: 10px 10px 5px black;
+}
+#game-board .active {
+  background-color: rgb(247, 240, 240);
+  margin: 5%;
+  border-radius: 8%;
+  box-shadow: 10px 10px 5px black;
+}
+.playerRolls {
+  background: black;
+  color: white;
+  background: solid red 1px;
+  width: 30%;
+  margin: auto;
+  height: auto;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bolder;
+  position: absolute;
+  opacity: 0.7;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 4%;
+  left: 38%;
+  top: 10%;
+  display: none;
+}
