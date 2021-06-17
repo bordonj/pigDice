@@ -22,7 +22,7 @@ Player.prototype.rollDie = function() {
       this.totalScore += this.turnScore;
       return 'wins';
     } else {
-      this.totalScore += this.turnScore;
+      this.totalScore += rollResult;
     }
     return rollResult;
   }
