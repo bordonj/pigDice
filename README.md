@@ -71,6 +71,9 @@ MIT &copy; 2021 _Adrian Camacho, John Blalock, Shoshana Newman, Jennifer Bordon_
 ## Contact Information :mailbox:
 
 _Adrian Camacho: adriancamacho18@gmail.com_
+
 _John Blalock: simpledimplejohn@gmail.com_
+
 _Sho Newman: sho.newman@gmail.com_
+
 _Jennifer Bordon: jennifer.bordon@gmail.com_
