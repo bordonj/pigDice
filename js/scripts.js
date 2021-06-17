@@ -18,7 +18,7 @@ Player.prototype.rollDie = function() {
     console.log('total score', this.totalScore);
   } else {
     this.turnScore += rollResult;
-      if (this.totalScore + this.turnScore >= 100) {
+      if (this.totalScore + rollResult >= 100) {
       this.totalScore += this.turnScore;
       return 'wins';
     } else {
