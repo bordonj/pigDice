@@ -114,7 +114,7 @@ $(document).ready(function() {
         $('#player2Turn').text(rolledDie);
         console.log('player object', player);
       }
-      if ((playerArray.length - 1) === currentPlayerIdx) {
+      if (currentPlayerIdx === 1) {
         currentPlayerIdx = 0;
       } else {
         currentPlayerIdx++;
@@ -125,7 +125,7 @@ $(document).ready(function() {
   $("#hold").click(function() {
     let htmlHoldDie = `${playerArray[currentPlayerIdx].playerName} held`;
     $(".playerRolls").html(htmlHoldDie);
-    if ((playerArray.length - 1) === currentPlayerIdx) {
+    if (currentPlayerIdx === 1) {
       currentPlayerIdx = 0;
     } else {
       currentPlayerIdx++;
