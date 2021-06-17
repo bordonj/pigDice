@@ -5,6 +5,19 @@ body, html {
   position: relative;
 }
 
+.winner {
+  display: none;
+  text-align: center;
+  font-size: 75px;
+  margin-top: -20%;
+  font-family: 'Dela Gothic One', cursive;
+}
+
+#winnerName {
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px#eb5335;
+}
+
 .background {
   background-image: url("../img/cheese-background.jpeg");
   height: 100%;
@@ -21,7 +34,7 @@ body, html {
   margin: auto;
   padding-top: 20%;
   min-width: 800px;
-  background-image: ;
+  /* background-image: ; */
 }
 .btn { 
   margin: auto;

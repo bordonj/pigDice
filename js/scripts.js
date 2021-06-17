@@ -89,8 +89,13 @@ $(document).ready(function() {
     $('.playerRolls').fadeIn();
     let rolledDie = playerArray[currentPlayerIdx].rollDie();
     if (rolledDie === "wins") {
+      $('#game-board').hide();
+      $('.playerRolls').hide();
+      $('.winner').show();
       // will want to add UI to this later
-      alert(`${playerArray[currentPlayerIdx].playerName} wins!!`);
+      let htmlRollDie = `<span id='winnerName'>${playerArray[currentPlayerIdx].playerName}</span> WINS!<img src='img/pigTrophy.png'><a href="."><button class="btn-lg btn-success" id="reset">Play Again!</button></a>`;
+      $(".winner").html(htmlRollDie);
+      // alert(`${playerArray[currentPlayerIdx].playerName} wins!!`);
       // maybe add a reset score button when someone wins
     } if (rolledDie) {
       let htmlRollDie = `${playerArray[currentPlayerIdx].playerName} rolled ${rolledDie}`;
