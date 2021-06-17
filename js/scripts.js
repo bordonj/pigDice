@@ -7,7 +7,7 @@ function Player(name) {
 }
 
 let player = new Player("hello")
-console.log('player object', player);
+// console.log('player object', player);
 
 
 Player.prototype.rollDie = function() {
@@ -56,6 +56,7 @@ $(document).ready(function() {
     event.preventDefault();
     $('input').each(function() {
       let newPlayer = new Player($(this).val());
+      console.log('newPlayer', newPlayer);
       playerArray.push(newPlayer);
     })
     $("#pig-dice-form").hide();
