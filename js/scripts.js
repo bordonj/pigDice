@@ -6,7 +6,7 @@ function Player(name) {
   this.turnScore = 0;
 }
 
-let player = new Player("hello")
+// let player = new Player("hello")
 // console.log('player object', player);
 
 
@@ -35,10 +35,10 @@ Player.prototype.holdDie = function () {
 };
 
 
-
 // UI Logic
 
 $(document).ready(function() {
+  let player = new Player();
   let playerArray = [];
   $("#hold").mouseover(function() {
     let img = $('#hold-image');
@@ -55,7 +55,7 @@ $(document).ready(function() {
   $("#pig-dice-form").submit(function(event) {
     event.preventDefault();
     $('input').each(function() {
-      let newPlayer = new Player($(this).val());
+      newPlayer = new Player($(this).val());
       console.log('newPlayer', newPlayer);
       playerArray.push(newPlayer);
     })
@@ -113,11 +113,11 @@ $(document).ready(function() {
       $(".playerRolls").html(htmlRollDie);
       if (currentPlayerIdx === 0) {
         $('#player1Total').text(playerArray[currentPlayerIdx].totalScore);
-        $('#player1Turn').text(rolledDie);
+        $('#player1Turn').text('0');
         console.log('player object', player);
       } else {
         $('#player2Total').text(playerArray[currentPlayerIdx].totalScore);
-        $('#player2Turn').text(rolledDie);
+        $('#player2Turn').text('0');
         console.log('player object', player);
       }
       if (currentPlayerIdx === 1) {
